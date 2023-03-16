@@ -23,33 +23,39 @@ End the program and close the output image windows.
 ### Register Number: 
 i) #To Read,display the image
 ```
-  
-
+import cv2
+import matplotlib.pyplot as plt
+from google.colab.patches import cv2_imshow
+image=cv2.imread("car.jpg",1)
+cv2_imshow(image)
 ```
 ii) #To write the image
 ```
-
-
-
+cv2.imwrite("anime.jpg",image)
 ```
 iii) #Find the shape of the Image
 ```python3
-
-
-
+print(image.shape)
 ```
 iv) #To access rows and columns
 
 ```python3
-
-
-
+import random
+img= cv2.imread('car.jpg',-1)
+for i in range(150):
+    for j in range(img.shape[1]):
+        img[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2_imshow(img)
+cv2.waitKey(0)
 ```
 v) #To cut and paste portion of image
 ```python3
-
-
-
+import cv2
+img= cv2.imread('car.jpg',-1)
+new = img[200:450,200:450]
+img[150:400,150:400] = new
+cv2_imshow(img)
+cv2.waitKey(0)
 ```
 
 ## Output:
@@ -57,6 +63,7 @@ v) #To cut and paste portion of image
 ### i) Read and display the image
 
 <br>
+![display.png]()
 <br>
 
 ### ii)Write the image

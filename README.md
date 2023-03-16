@@ -63,25 +63,29 @@ cv2.waitKey(0)
 ### i) Read and display the image
 
 <br>
-![display.png]()
+![](display.png)
 <br>
 
 ### ii)Write the image
 
 <br>
+![](write.png)
 <br>
 
 ### iii)Shape of the Image
 
 <br>
+![](shape.png)
 <br>
 
 ### iv)Access rows and columns
 <br>
+![](row.png)
 <br>
 
 ### v)Cut and paste portion of image
 <br>
+![](cut.png)
 <br>
 
 ## Result:
